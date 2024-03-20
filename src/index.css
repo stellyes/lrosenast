@@ -10,6 +10,11 @@
   z-index: -1;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #root {
   display: flex;
   flex-direction: row;
@@ -33,4 +38,21 @@
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.25rem;
+  transition: letter-spacing 0.3s ease;
+}
+
+.menu-link {
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  transition: letter-spacing 0.3s ease;
+}
+
+.menu-link:hover {
+  letter-spacing: -0.05rem;
+}
+
+.menu-title:hover {
+  letter-spacing: -0.2rem;
 }
