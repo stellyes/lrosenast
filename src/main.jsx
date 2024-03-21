@@ -5,6 +5,13 @@ import Granim from 'granim'
 import App from './App.jsx'
 import Home from './pages/Home.jsx';
 
+import Installations from './pages/Installations.jsx';
+import Exhibitions from './pages/Exhibitions.jsx';
+import Commissions from './pages/Commissions.jsx';
+import Wallwork from './pages/Wallwork.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+
 import './index.css'
 
 new Granim({
@@ -54,6 +61,30 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: '/about',
+        element: <About />
+      },
+      {
+        path: '/commissions',
+        element: <Commissions />
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/exhibitions',
+        element: <Exhibitions />
+      },
+      {
+        path: '/installations',
+        element: <Installations />
+      },
+      {
+        path: '/wallwork',
+        element: <Wallwork />
       }
     ]
   }

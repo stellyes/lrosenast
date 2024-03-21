@@ -8,10 +8,12 @@ const Menu = () => {
                 <h1 className="menu-title">LUCIA ROSENAST</h1>
             </Link>
             <Container className="menu-links d-flex flex-column justify-content-center align-items-center">
-                <Link to="/" className="menu-link">Home</Link>
-                <Link to="/about" className="menu-link">About</Link>
-                <Link to="/projects" className="menu-link">Projects</Link>
-                <Link to="/contact" className="menu-link">Contact</Link>
+                <Link to="/commissions" className="menu-link  my-1">Comissions</Link>
+                <Link to="/exhibitions" className="menu-link my-1">Exhibitions</Link>
+                <Link to="/installations" className="menu-link my-1">Installations</Link>
+                <Link to="/wallwork" className="menu-link my-1">Wallwork</Link>
+                <Link to="/about" className="menu-link my-1">About</Link>
+                <Link to="/contact" className="menu-link my-1">Contact</Link>
             </Container>
         </Container>
     );
