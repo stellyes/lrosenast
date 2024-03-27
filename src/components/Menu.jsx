@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Menu = () => {
     return (
-        <Container className='menu'>
+        <Container xl={3} sm={12} className='menu d-flex flex-column align-items-center justify-content-center'>
             <Link to="/">
                 <h1 className="menu-title">LUCIA ROSENAST</h1>
             </Link>
