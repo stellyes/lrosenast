@@ -18,9 +18,8 @@ const Home = () => {
 
     const [hovered, setHovered] = useState(commissionIcon);
 
-
     return (
-        <Container md={8} sm={12} className="home d-flex flex-row align-items-center justify-content-center m-5" style={{ backgroundImage: `${hovered}` }}>
+        <Container md={8} sm={12} className="home d-flex flex-row align-items-center justify-content-center my-5" style={{ backgroundImage: `${hovered}` }}>
             <Container className='home-image' style={{ backgroundImage: `url(${hovered})` }} alt="home" />
             <Container className='d-flex flex-column align-items-center justify-content-center'>
                 {menuItems.map((item, index) => {
