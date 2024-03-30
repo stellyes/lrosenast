@@ -12,6 +12,8 @@ import Wallwork from './pages/Wallwork.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 
+import CommissionPanel from './components/CommissionPanel.jsx';
+
 import './index.css'
 
 new Granim({
@@ -69,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: '/commissions',
         element: <Commissions />
+      },
+      {
+        path: '/commissions/:id',
+        element: <CommissionPanel />
       },
       {
         path: '/contact',

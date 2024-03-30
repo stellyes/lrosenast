@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
 
 import img1 from '../assets/commisions/36735398-04DD-4E8B-969E-B2F732232722_1_105_c.jpeg';
 import img2 from '../assets/commisions/487B9C89-9B77-417B-A1BB-905275631608_4_5005_c.jpeg';
@@ -65,10 +66,18 @@ const Commissions = () => {
                 return (
                     <Container Container key={index} className='commission-item d-flex flex-row align-items-center justify-content-center my-2 mx-1 p-3' >
                         <Container style={{ backgroundImage: `url(${image.img})` }} className='item-icon p-0 m-0' ></Container>
-                        <Container>
-                            <h2 style={{ height: "50%" }} className='p-0 m-0'>{image.title}</h2>
-                            <p style={{ height: "45%" }} className='p-0 m-0'>{image.description}</p>
-                        </Container>
+                        <Link
+                            to={`/commissions/${index}`}
+                            key={index}
+                            className="item-link"
+                            state={image}
+                        >
+                            <Container>
+                                <h2 style={{ height: "50%" }} className='p-0 m-0'>{image.title}</h2>
+                                <p style={{ height: "45%" }} className='p-0 m-0'>{image.description}</p>
+                            </Container>
+                        </Link>
+
                     </Container>
                 );
             })}
