@@ -85,6 +85,34 @@ a {
   transition: background-image 0.2s ease;
 }
 
+.item-icon {
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  height: 100px;
+  width: 100px;
+}
+
+.commissions {
+  flex-wrap: wrap;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.commission-item {
+  max-width: 48%;
+  letter-spacing: -0.05rem;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  transition: background-color 0.3s ease, letter-spacing 0.3s ease,
+    text-shadow 0.2s ease;
+}
+
+.commission-item:hover {
+  background-color: #0000002f;
+  letter-spacing: 0;
+  text-shadow: 0 0 0.2rem #888;
+}
+
 .coming-soon {
   font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-size: 3rem;
